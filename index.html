@@ -1,10 +1,212 @@
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Meu Projeto - Curso em Vídeo</title>
+  <title>GabrielaCraft - Curso Python</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #33ff33;
+      font-family: 'Press Start 2P', cursive;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .bloco {
+      background: #2b2b2b;
+      border: 2px solid #3aff3a;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #3aff3a88;
+      transition: transform 0.2s;
+    }
+
+    .bloco:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    h2 {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    pre {
+      font-size: 10px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
 </head>
 <body>
-  <h1>Olá!</h1>
-  <p>Esse é o meu projeto do Curso em Vídeo de Python!</p>
+  <h1>🌍 Gabriela Yasmin - Missões do Curso Python</h1>
+
+  <div class="menu">
+
+    <div class="bloco">
+      <h2>Aula 1</h2>
+      <pre>n1 = int (input('primeiro numero:'))
+n2 = int (input('segundo numero:'))
+soma = n1 + n2
+print('a soma entre {} e {} vale {}'.format(n1,n2, soma))</pre>
+    </div>
+
+    <div class="bloco">
+      <h2>Aula 2</h2>
+      <pre>soma = 0
+print('seuquencia de mutiplos de 3 até 21:')
+for i in range (3,22,3):
+    print(i)
+    soma +=1
+print(f'soma dos numeros gerados: {soma}')</pre>
+    </div>
+
+    <div class="bloco">
+      <h2>Aula 3</h2>
+      <pre>valor1 = int(input('Primeiro número: '))
+valor2 = int(input('Segundo número: '))
+valor3 = int(input('Terceiro número: '))
+maior = valor1
+if valor2 &gt; maior:
+    maior = valor2
+if valor3 &gt; maior:
+    maior = valor3
+print('O maior valor é:', maior)</pre>
+    </div>
+
+    <div class="bloco">
+      <h2>Desafio 1</h2>
+      <pre>x = int (input('primeiro numero:'))
+y = int (input('segundo numero:'))
+soma = x + y
+print('a soma entre {} e {} vale {}'.format(x,y, soma))</pre>
+    </div>
+
+    <div class="bloco">
+      <h2>Desafio 2</h2>
+      <pre>soma = 0
+for numero in range(2, 21, 2):
+    print(numero)
+    soma +=1
+print(f'soma dos numeros gerados: {soma}')</pre>
+    </div>
+
+    <div class="bloco">
+      <h2>Desafio 3</h2>
+      <pre>valor1 = int(input('Primeiro número: '))
+valor2 = int(input('Segundo número: '))
+valor3 = int(input('Terceiro número: '))
+maior = valor1
+if valor2 &gt; maior:
+    maior = valor2
+if valor3 &gt; maior:
+    maior = valor3
+print('O maior valor é:', maior)</pre>
+  mundo2 = {
+    "Aula 4 (for básico)": """for i in range(1, 6):
+    print(f"Contando: {i}")""",
+
+    "Aula 5 (while básico)": """contador = 1
+while contador <= 5:
+    print(f"Repetindo: {contador}")
+    contador += 1""",
+
+    "Aula 6 (for e while juntos)": """for i in range(3):
+    print(f"FOR: {i}")
+    j = 0
+    while j < 2:
+        print(f"  WHILE interno: {j}")
+        j += 1""",
+
+    "Desafio 4 (Contagem regressiva com for)": """for i in range(10, -1, -1):
+    print(i)
+print("Lançamento!")""",
+
+    "Desafio 5 (Tabuada com while)": """n = int(input("Digite um número: "))
+i = 1
+while i <= 10:
+    print(f"{n} x {i} = {n * i}")
+    i += 1""",
+
+    "Desafio 6 (Soma de ímpares com for)": """soma = 0
+for i in range(1, 20, 2):
+    soma += i
+print("Soma dos ímpares de 1 a 19:", soma)"""
+}
+
+html_minecraft_path = Path("/mnt/data/gabrielayasmin_index_mundo2.html")
+
+# Código base anterior (mantendo o mesmo estilo)
+html_mundo2 = """
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>GabrielaCraft - Curso Python Mundo 1 e 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #1e1e1e; color: #33ff33; font-family: 'Press Start 2P', cursive; padding: 20px; }
+    h1 { text-align: center; font-size: 20px; }
+    h3 { margin-top: 40px; font-size: 16px; }
+    .menu { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
+    .bloco {
+      background: #2b2b2b; border: 2px solid #3aff3a; padding: 15px; border-radius: 10px;
+      box-shadow: 0 0 10px #3aff3a88; transition: transform 0.2s;
+    }
+    .bloco:hover { transform: scale(1.05); cursor: pointer; }
+    pre { font-size: 10px; white-space: pre-wrap; word-wrap: break-word; }
+  </style>
+</head>
+<body>
+  <h1>🌍 GabrielaCraft - Missões do Curso Python</h1>
+
+  <h3>🌱 Mundo 1</h3>
+  <div class="menu">
+"""
+
+# Reaproveitar os blocos anteriores do Mundo 1
+for titulo, codigo in arquivos.items():
+    html_mundo2 += f"""
+    <div class="bloco">
+      <h2>{titulo}</h2>
+      <pre>{codigo}</pre>
+    </div>
+"""
+
+html_mundo2 += """
+  </div>
+
+  <h3>🌿 Mundo 2</h3>
+  <div class="menu">
+"""
+
+# Adicionar os blocos do Mundo 2
+for titulo, codigo in mundo2.items():
+    html_mundo2 += f"""
+    <div class="bloco">
+      <h2>{titulo}</h2>
+      <pre>{codigo}</pre>
+    </div>
+"""
+
+html_mundo2 += """
+  </div>
 </body>
 </html>
+"""
+
+# Salvar o novo arquivo HTML
+html_minecraft_path.write_text(html_mundo2, encoding="utf-8")
+str(html_minecraft_path)
